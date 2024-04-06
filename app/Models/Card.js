@@ -8,6 +8,7 @@ const cardSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
     },
+    attachments: [{ type: String }],
     status: { type: String, enum: ["YetToStart", "InProgress", "Done"] },
     desc: { type: String },
     labels: [
@@ -36,6 +37,7 @@ const cardSchema = new mongoose.Schema(
       ref: "Column",
       index: true,
     },
+    customFields: { type: mongoose.Schema.Types.Mixed },
   },
   {
     timestamps: true,
