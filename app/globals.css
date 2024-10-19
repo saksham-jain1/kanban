@@ -1,0 +1,32 @@
+body {
+  min-height: 100vh !important;
+}
+
+@media (hover: none) {
+  .touch {
+    opacity: 1 !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4299E1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-corner{
+  background-color: transparent;
+}

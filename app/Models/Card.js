@@ -4,6 +4,10 @@ const cardSchema = new mongoose.Schema(
   {
     title: { type: String, required: true },
     dueDate: { type: Date },
+    createdBy: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+    },
     assignedTo: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
